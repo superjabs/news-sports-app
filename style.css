@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+ul li {
+  list-style: none;
+  margin: 20px 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: rgb(212, 51, 51);
+}
+
+img {
+  width: 100%;
+  height: auto;
+  margin: 10px 0;
+  transition: 200ms ease-in-out;
+}
+
+img:hover {
+  cursor: pointer;
+  filter: grayscale(0.7);
+}
+
+/* general css */
+
+.header {
+  text-align: center;
+  padding: 60px;
+  color: white;
+  background-image: linear-gradient(to right, rgb(78, 78, 78), rgb(90, 0, 0));
+  background-size: cover;
+  width: 100%;
+  height: auto;
+  opacity: 0.8;
+}
+
+.navbar {
+  background-color: rgb(36, 36, 36);
+  display: flex;
+}
+
+.navbar a {
+  font-size: 15px;
+  font-weight: 100;
+  text-decoration: none;
+  color: white;
+  padding: 15px;
+}
+
+.navbar a:hover {
+  background-color: gray;
+  color: white;
+  padding: 15px;
+}
+
+.title {
+  margin: 70px 90px;
+}
+
+.title a {
+  text-align: center;
+  font-size: 30px;
+}
+
+.container {
+  display: flex;
+  padding: 0 40px;
+}
+
+.sideleft {
+  padding: 10px;
+  flex: 25%;
+  overflow: hidden;
+}
+
+.main {
+  padding: 10px;
+  flex: 50%;
+}
+
+.sideright {
+  flex: 25%;
+  padding: 10px;
+}
+
+.content {
+  padding-top: 10px;
+  border-top: 1px solid grey;
+}
+
+/* bottom */
+.footer {
+  text-align: center;
+  padding: 15px;
+  color: black;
+  background-color: rgb(236, 236, 236);
+}
+
+@media screen and (max-width: 900px) {
+  .navbar,
+  .container {
+    flex-direction: column;
+  }
+  .sideleft,
+  .sideright,
+  .main {
+    border: none;
+    padding: 0;
+    margin: 0;
+  }
+} ;
